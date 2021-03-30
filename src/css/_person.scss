@@ -1,0 +1,95 @@
+/** @format */
+
+.person-container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.person-contents {
+  padding: 3rem;
+}
+.person-details {
+  width: 100%;
+  height: 18rem;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  .person-img {
+    width: 200px;
+    height: 200px;
+
+    margin-right: 7rem;
+    img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .person-dettails {
+    font-family: "Lato", sans-serif;
+    h2 {
+      font-size: 1.5rem;
+      letter-spacing: 1.5px;
+      margin: 0.5rem 0;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+  }
+}
+.person-movies {
+  margin-top: 5rem;
+
+  min-height: 50vh;
+  display: flex;
+
+  overflow-x: visible;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+.person-movies-box {
+  color: aliceblue;
+  position: relative;
+  margin: 0.6rem;
+  transition: all 0.2s linear;
+  width: 280px;
+  height: 380px;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .person-movies-img {
+    width: 220px;
+    height: 300px;
+    transition: all 0.5s ease-in-out;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  .movies-person-details {
+    text-align: center;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    h2 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    p {
+      margin: 0.5rem 0;
+      font-weight: 600;
+      color: rgba(43, 39, 41, 0.747);
+    }
+  }
+}
